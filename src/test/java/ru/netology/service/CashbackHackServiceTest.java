@@ -10,8 +10,9 @@ public class CashbackHackServiceTest {
     public void shouldCountRemain() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = service.remain(1000);
         int expected = 1000;
+        int actual = service.remain(1000);
+
 
         assertEquals(expected, actual);
     }
@@ -20,8 +21,9 @@ public class CashbackHackServiceTest {
     public void shouldCountRemainIfZero() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = service.remain(0);
         int expected = 1000;
+        int actual = service.remain(0);
+
 
         assertEquals(expected, actual);
     }
@@ -30,8 +32,9 @@ public class CashbackHackServiceTest {
     public void shouldCountBorderIfLess() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = service.remain(2999);
         int expected = 1;
+        int actual = service.remain(2999);
+
 
         assertEquals(expected, actual);
     }
@@ -40,8 +43,9 @@ public class CashbackHackServiceTest {
     public void shouldCountBorderIfMore() {
         CashbackHackService service = new CashbackHackService();
 
-        int actual = service.remain(3001);
         int expected = 999;
+        int actual = service.remain(3001);
+
 
         assertEquals(expected, actual);
     }
