@@ -10,7 +10,7 @@ public class CashbackHackServiceTest {
     public void shouldCountRemain() {
         CashbackHackService service = new CashbackHackService();
 
-        int expected = 1000;
+        int expected = 0;
         int actual = service.remain(1000);
 
 
